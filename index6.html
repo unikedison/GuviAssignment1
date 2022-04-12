@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            margin: 50px;;
+        }
+
+        #reset{
+            margin-left: 20px;
+        }
+        
+        fieldset{
+            width: 500px;
+            margin: 20px;
+        }   
+    </style>
+</head>
+<body>
+    <main>
+        <fieldset>
+            <legend>Employee Details</legend>
+        <form action="" method="POST">
+            <table cellspacing="3" cellpadding="10">
+                <tr>
+                    <td><label for="empName">Employee Name</label></td>
+                    <td><input type="text" name="empName" id="empName" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone</label></td>
+                    <td><input type="text" maxlength="10" required name="phone" id="phone"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" name="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="">Employee Type</label></td>
+                    <td>
+                        <input type="radio" name="empType" id="">
+                        <label for="empType">Salaried</label>
+
+                        <input type="radio" name="empType" id="">
+                        <label for="empType">Own Business</label>
+                    </td>                    
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button id="submit" type="submit">Submit</button>
+                        <button id="reset" type="reset">Reset</button>
+                    </td>                    
+                </tr>
+            </table>
+        </form>
+        </fieldset>
+    </main>
+</body>
+</html>
